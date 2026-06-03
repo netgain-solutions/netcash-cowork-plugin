@@ -51,7 +51,7 @@ This plugin installs into Claude Cowork. End users install it in one click from 
 1. Sign in to Claude Cowork as a workspace admin.
 2. Go to **Organization settings → Plugins**.
 3. Add a new GitHub plugin marketplace pointing at `netgain-solutions/netcash-cowork-plugin`.
-4. Authenticate to GitHub when prompted. Cowork installs Anthropic's GitHub App on the repo for ongoing read access. Your GitHub account needs collaborator access to the private repo - ask your Netgain contact if you don't have it.
+4. Authenticate to GitHub when prompted. Cowork installs Anthropic's GitHub App on the repo for ongoing read access. The repo is public, so no collaborator access is required.
 5. Set the install policy. "Available for install" lets users opt in; "Installed by default" enrolls everyone in the workspace.
 6. Save.
 
@@ -181,10 +181,10 @@ Apache License 2.0. See [LICENSE](LICENSE).
 
 ## Support
 
-**Pilot users:** Contact your Netgain pilot lead with feedback, questions, or issues. Bug reports filed in this private GitHub repository are also welcome.
+**Pilot users:** Contact your Netgain pilot lead with feedback, questions, or issues. Bug reports filed in this GitHub repository are also welcome.
 
 **Setup issues** (NetSuite MCP won't connect, NetCash tools not visible, authentication errors): see [CONNECTORS.md — Common issues](CONNECTORS.md#common-issues) first.
 
 **Plugin issues** (wrong output, unexpected behavior, skill errors): try `/troubleshoot` with a description of the symptom — the plugin has a named-failure-mode diagnostic that resolves five common patterns directly. If `/troubleshoot` can't diagnose, file a GitHub issue or escalate to your Netgain pilot lead.
 
-After public release (`1.0.0`), see Netgain Support contact information at netgain.tech.
+For Netgain Support contact information, see netgain.tech.
