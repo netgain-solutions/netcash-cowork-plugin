@@ -1,0 +1,16 @@
+{
+  "name": "netcash-cowork-plugin",
+  "owner": {
+    "name": "Netgain Technologies"
+  },
+  "plugins": [
+    {
+      "name": "netcash",
+      "source": {
+        "source": "github",
+        "repo": "netgain-solutions/netcash-cowork-plugin"
+      },
+      "description": "AI copilot for NetCash bank reconciliation in NetSuite. Find matches, suggest automation rules, generate dashboards, troubleshoot recon issues. Native NetSuite SuiteApp tools, controller-in-the-chair workflow."
+    }
+  ]
+}

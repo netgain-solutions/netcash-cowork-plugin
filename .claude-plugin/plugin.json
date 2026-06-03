@@ -1,0 +1,8 @@
+{
+  "name": "netcash",
+  "version": "1.0.0",
+  "description": "AI copilot for NetCash bank reconciliation in NetSuite. Find matches, suggest automation rules, generate dashboards, troubleshoot recon issues. Native NetSuite SuiteApp tools, controller-in-the-chair workflow.",
+  "author": {
+    "name": "Netgain Technologies"
+  }
+}
