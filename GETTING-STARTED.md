@@ -7,7 +7,7 @@ This walkthrough gets you through your first NetCash session — about 10 minute
 You'll need:
 
 - Claude Cowork (Team or Enterprise plan)
-- The NetCash plugin installed — your workspace admin enables it once (see [README Installation](README.md#installation))
+- The NetCash plugin installed — add it yourself (Customize → Plugins → Personal) or have your workspace admin enable it; see [README Installation](README.md#installation)
 - The NetSuite MCP connected in your Cowork session (see [CONNECTORS.md](CONNECTORS.md))
 - A NetSuite role with NetCash MCP access — start from the **NetCash MCP View** template (read-only) or **NetCash MCP Edit** template (read + write), then have your NetSuite admin clone and customize
 

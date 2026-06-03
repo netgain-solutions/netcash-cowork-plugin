@@ -42,40 +42,34 @@ The plugin tells Cowork it needs the NetSuite MCP server. It does not embed a UR
 
 ## Installation
 
-This plugin installs into Claude Cowork. End users install it in one click from their plugin browser, but a workspace admin needs to enable it for the workspace first via one of two paths: connecting this GitHub repo as a marketplace (recommended, auto-syncs updates) or uploading a ZIP file (no GitHub access required, manual updates).
+This plugin is for **Claude Cowork** (Team or Enterprise). During the pilot, the simplest way in is **per-user, via a Personal marketplace** — no admin setup required. A workspace admin can alternatively roll it out to everyone via ZIP upload.
 
-### Workspace admin (one-time setup)
+> **Heads-up:** the **Organization settings → Plugins → Add plugins → Sync from GitHub** flow only lists *private/internal* repos, so it will **not** show this public repo. Use the Personal path below (or the ZIP option) — don't try to add the public repo through org GitHub sync.
 
-**Option A: GitHub marketplace (recommended).** Auto-syncs new plugin versions as Netgain ships them.
-
-1. Sign in to Claude Cowork as a workspace admin.
-2. Go to **Organization settings → Plugins**.
-3. Add a new GitHub plugin marketplace pointing at `netgain-solutions/netcash-cowork-plugin`.
-4. Authenticate to GitHub when prompted. Cowork installs Anthropic's GitHub App on the repo for ongoing read access. The repo is public, so no collaborator access is required.
-5. Set the install policy. "Available for install" lets users opt in; "Installed by default" enrolls everyone in the workspace.
-6. Save.
-
-**Option B: ZIP upload (no GitHub required).** Best if your team can't or doesn't want to use GitHub.
-
-1. Get the plugin ZIP file from your Netgain contact.
-2. Sign in to Claude Cowork as a workspace admin.
-3. Go to **Organization settings → Plugins**.
-4. Use the manual upload flow to upload the ZIP.
-5. Set the install policy and save.
-
-Tradeoff: every new plugin version requires re-uploading a fresh ZIP. Your Netgain contact will let you know when updates are available.
-
-For full admin docs, see [Manage Claude Cowork plugins for your organization](https://support.claude.com/en/articles/13837433-manage-claude-cowork-plugins-for-your-organization).
-
-### End users (controllers, accountants)
+### Install it yourself (recommended for the pilot)
 
 1. Open the Claude Cowork desktop app.
-2. Click **Customize** in the left sidebar (with the Cowork tab selected) to open the plugin browser.
-3. Find **NetCash** in the list and click **Install**.
-4. Make sure the **NetSuite MCP** is connected in your Cowork session - see [CONNECTORS.md](CONNECTORS.md).
-5. The nine slash commands and six skills become available immediately.
+2. Click **Customize** in the left sidebar to open the **Directory**.
+3. Go to **Plugins → Personal**, then click **`+` → Add marketplace**.
+4. Point it at the GitHub repo `netgain-solutions/netcash-cowork-plugin` (authenticate to GitHub if prompted). The repo is public — no special access needed.
+5. The **NetCash** plugin (by Netgain Technologies) appears — click **Install**.
+6. Make sure the **NetSuite MCP** is connected in your Cowork session — see [CONNECTORS.md](CONNECTORS.md).
+7. The nine slash commands and six skills become available immediately.
 
-For step-by-step end-user install instructions written for non-technical audiences, point your customers at the Netgain KB article on installing the NetCash plugin (your Netgain contact has the link).
+For step-by-step instructions written for non-technical audiences, point your customers at the Netgain KB article on installing the NetCash plugin (your Netgain contact has the link).
+
+### Org-wide rollout (workspace admin, optional)
+
+To push NetCash to everyone in a workspace instead of having each user add it:
+
+1. Get the plugin ZIP from your Netgain contact (or download the repo as a ZIP from GitHub).
+2. Sign in to Claude Cowork as a workspace admin.
+3. Go to **Organization settings → Plugins → Add plugins** and use the upload flow.
+4. Set the install policy — **"Available to install"** (users opt in) or **"Installed by default"** (enrolls everyone) — and save. Once enabled, users find **NetCash** under Customize → Plugins → Your organization and click **Install**.
+
+Tradeoff: each new version requires re-uploading a fresh ZIP. If you'd rather auto-sync from GitHub org-wide, fork this public repo into your own **private** repo and sync that fork (org GitHub sync accepts private repos) — ask your Netgain contact for help.
+
+For full admin docs, see [Manage Claude Cowork plugins for your organization](https://support.claude.com/en/articles/13837433-manage-claude-cowork-plugins-for-your-organization).
 
 ### Claude.ai web chat
 
@@ -83,7 +77,7 @@ Claude.ai web chat does not support plugin installation for end users. This plug
 
 ## Quick Start
 
-Once your workspace admin has enabled the plugin and you've connected the NetSuite MCP ([Connectors](CONNECTORS.md)), open a new Cowork conversation and try this four-step first session. Total time: about three minutes.
+Once the plugin is installed and you've connected the NetSuite MCP ([Connectors](CONNECTORS.md)), open a new Cowork conversation and try this four-step first session. Total time: about three minutes.
 
 ### 1. Verify the connection (15 seconds)
 
